@@ -1,0 +1,33 @@
+KEBAL - HOW TO RUN
+=============================
+
+Step 0 (one time only): Install Python 3.10 or newer from https://www.python.org/downloads/
+        WINDOWS: on the first install screen, TICK "Add python.exe to PATH".
+
+WINDOWS
+  1. Right-click the zip > "Extract All..." (do NOT run it from inside the zip).
+  2. Open the extracted "scamshield_arena" folder.
+  3. Double-click  START_HERE_Windows.bat
+     - If Windows shows "Windows protected your PC": click "More info" > "Run anyway".
+  4. First run installs everything (2-5 min). Your browser then opens the app.
+  5. Keep the black window open while you use the app.
+
+MAC
+  1. Double-click the zip to extract it.
+  2. Open the "scamshield_arena" folder.
+  3. Right-click START_HERE_Mac.command > Open > Open  (needed the first time only).
+  4. First run installs everything (2-5 min). Your browser then opens the app.
+
+MANUAL WAY (any computer) - open a terminal INSIDE the scamshield_arena folder:
+  python -m pip install -r requirements.txt
+  python -m streamlit run app.py
+  (on Mac use python3 instead of python)
+
+If the browser doesn't open, go to:  http://localhost:8501
+
+COMMON PROBLEMS
+  "python is not recognized"      -> Python not installed or "Add to PATH" not ticked. Reinstall Python.
+  "streamlit is not recognized"   -> Use  python -m streamlit run app.py  instead of  streamlit run app.py
+  "No such file: app.py"          -> Your terminal is in the wrong folder. cd into scamshield_arena first.
+  Opens Microsoft Store           -> Install Python from python.org instead, then try again.
+  Double-clicking app.py does nothing -> That's normal. Use START_HERE instead.

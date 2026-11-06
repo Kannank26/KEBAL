@@ -1,0 +1,5 @@
+# never upload these
+*.db
+.venv/
+__pycache__/
+.streamlit/secrets.toml
